@@ -1,107 +1,62 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Research</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <div>
-    <h1>Welcome to our Medical Research Website</h1>
-    <p>Watch our introductory video:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-</header>
-  ...
-  <!-- YouTube API script -->
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script>
-    // This function creates an <iframe> (and YouTube player)
-    // after the API code downloads.
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'dQw4w9WgXcQ',
-        playerVars: {
-          'autoplay': 1,
-          'controls': 0,
-          'mute': 1,
-          'loop': 1,
-          'modestbranding': 1,
-          'showinfo': 0
-        },
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-    }
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
-    function onPlayerStateChange(event) {
-      if (event.data === YT.PlayerState.ENDED) {
-        player.playVideo();
-      }
-    }
-  </script>
-  ...
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransVita Clinical Solutions and Diagnostics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="forum">Forum</a></li>
+                <li><a href="Research">Our Research</a></li>
+                <li><a href="contact us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-      <section>
-        <h1>Welcome to our Medical Research Website</h1>
-        <p>We are dedicated to advancing medical knowledge through research.</p>
-      </section>
+        <section class="hero">
+            <h1>Welcome to TransVita, Medicine of the Future.</h1>
+            <p>Since 2014.</p>
+            <a href="about" class="btn">Learn More</a>
+        </section>
+        <section class="Research">
+            <h2>Our Research</h2>
+           <p>  Since our founding in 2014, We have worked tirelessly to create a better future for America. Our founder Cheryl Barnes discovered what would later be know as "the gay gene" back in 2012,
+         by the year 2014 she found a way to remove this gene. Our first tests were successful but were very expensive as they used RadioTherapy, now after 9 years of research we have created a one time vaccine that targets, and removes this gene.</p>
+        <section class="Our Goals">
+            <h2>Our Goals</h2>
+            <p>Our end Goal is to create a perfect peaceful world with no Errors at all.</p>
 
-      <section>
-        <h2>About Us</h2>
-        <p>We are a team of medical professionals who are passionate about improving patient outcomes through research.</p>
-      </section>
+    <p>Eradicating The Gay Gene: Our first goal to meet by the end of the calender year is to remove the gay gene from existence. Through our research this genetic deformity orginated around 3000 years ago through birth defects caused by incest, with our studies we found the exact chromosomal pair that causes this issue.</p>
 
-      <section>
-        <h2>Research</h2>
-        <p>Our current research projects include:</p>
-        <ul>
-          <li>Study on the efficacy of a new cancer drug</li>
-          <li>Research on the long-term effects of COVID-19 on lung function</li>
-          <li>Investigation of new treatments for Alzheimer's disease</li>
-        </ul>
-      </section>
+    <p>The Reversing of Yakub's Work: Our next goal once we complete the goal previous is to reverse the work of famous scientist Yakub, before 4500 BCE there was never any conflict or problem on earth, but the second Yakub completed his research is when all the world's problems started.</p>
 
-      <section>
-        <h2>Publications</h2>
-        <p>Our recent publications include:</p>
-        <ul>
-          <li>Smith et al. (2021). "Efficacy of a new cancer drug in treating advanced prostate cancer." The New England Journal of Medicine.</li>
-          <li>Jones et al. (2022). "Long-term effects of COVID-19 on lung function." The Lancet Respiratory Medicine.</li>
-          <li>Wang et al. (2023). "Investigation of new treatments for Alzheimer's disease." Journal of Alzheimer's Disease.</li>
-        </ul>
-      </section>
+    <p></p>
 
-      <section>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to learn more about our research, please contact us using the form below:</p>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <input type="submit" value="Send">
-        </form>
-      </section>
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p></p>
+
+    <p> </p>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor ex id lacus sollicitudin, at sagittis ex vehicula. Sed vel bibendum nisi. </p>
+        </section>
     </main>
-
     <footer>
-      <p>&copy; 2023 Medical Research Website</p>
+        <p>&copy; 2023 TransVita Clinical Studies and Diagnostics</p>
     </footer>
-
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
